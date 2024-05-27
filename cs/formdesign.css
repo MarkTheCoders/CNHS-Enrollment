@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",'sans-serif';
+}
+
+body{
+    position: relative;
+    background: #009900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+::selection{
+    color: white;
+    background: #009900;
+}
+
+.form{
+    position: relative;
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: -3px 3px 10px -5px rgba(0,0,0,0.2);
+    padding: 30px 30px;   
+}
+
+.form h2{
+    font-size: 14px;
+    font-weight: 700;
+        
+}
+
+.form p{
+    font-size: 14px;
+    padding-bottom: 8px;
+}
+
+.form form{
+    margin: 8px 0;
+}
+
+.form form .error-text{
+    color: crimson;
+    padding: 4px 6px;
+    text-align: center;
+    border-radius: 4px;
+    background: white;
+    border: 1px solid #ff9999;
+    margin-bottom: 8px;
+}
+
+.form .grid-details{
+    display: flex;
+}
+
+.form form .input:first-child{
+    margin-right: 8px;
+}
+.form form .input:last-child{
+    margin-left: 8px;
+    width: 100%;
+}
+.form form .input-field input{
+    height: 40px;
+    width: 100%;
+    font-size: 14px;
+    padding: 0 8px;
+    border: 1px solid white;
+    border-radius: 5px;
+    outline: none;
+}
+.form form .input-field input{
+    
+}
+

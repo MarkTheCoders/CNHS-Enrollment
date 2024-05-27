@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "sans-serf";
+}
+
+body{
+    position: relative;
+    background: url("imgs/Cnhs.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh
+}
+
+::selection{
+    color: white;
+    background: #0099cc;
+}
+
+.form{
+    position: relative;
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: -3px 3px 10px rgba(0,0,0,0.2);
+    padding: 30px 30px;
+}
+
+.form h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.form p{
+    font-size: 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid blue;
+}
+
+.form form{
+    margin: 8px 0;
+}
+
+.form form .error-text{
+    display:none;
+    color: white;
+    padding: 4px 6px;
+    text-align: center;
+    border-radius: 4px;
+    background: crimson;
+    margin-bottom: 8px;
+}
+
+.form .grid-details{
+    display: flex;
+}
+
+.form .grid-details .input:first-child{
+    margin-right: 8px;
+    width: 100%;
+}
+
+.form .grid-details .input:last-child{
+    margin-right: 8px;
+    width: 100%;
+}
+
+.form form .input input{
+    height: 40px;
+    width: 100%;
+    font-size: 14px;
+    padding: 0 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form form .input input:focus,
+.form form .input input:focus{
+    border: 2px solid #00b3ff;
+    transition: 0.1s;
+    outline: none; 
+}
+
+.form form input.button{
+    height: 45px;
+    border: none;
+    color: white;
+    width: 100%;
+    background: #006600;
+    font-size: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 13px;
+    border:2px solid chartreuse;
+}
+
+.form .link {
+    text-align:center;
+    margin: 10px 0;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.form .link a{
+    color: #0099ff;
+    transition: 0.5s all;
+}
+
+.form .link a:hover{
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+
+@media only screen and (max-width:355px){
+    .form form .input input{
+    height: 30px;
+    width: 100%;
+    font-size: 10px;
+    padding: 0 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+}
+}
